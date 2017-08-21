@@ -1,0 +1,50 @@
+/* Font setup. */
+
+@font-face {
+  font-family: '8-BIT WONDER';
+  src: url('../fonts/8bit_wonder/8-BIT WONDER.ttf') format('truetype');
+     }
+
+@font-face {
+  font-family: 'codeman38_press-start-2p';
+  src: url('../fonts/codeman38_press-start-2p/PressStart2p.ttf');
+}
+
+/* Scaffolding formatting */
+
+body {
+  font-family: 'codeman38_press-start-2p', monospace;
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+header {
+  font-family: "8-BIT WONDER", monospace;
+  text-align: center;
+  background-color: #d4ed82;
+  margin: 0 auto;
+  padding: 0.8em;
+  color: #303030;
+}
+
+.timer {
+  /*margin-top: 0px;*/
+  padding: .1px;
+  padding-left: .5em;
+}
+
+.timer h1 {
+  margin: .5em;
+}
+
+.shop {
+  height: calc(100% - 95px - 30%);
+  background-color: #aee0ef;
+}
+
+.station {
+  height: calc(100% - 95px - (100% - 95px - 30%));
+  background-color: #ffc270;
+}
