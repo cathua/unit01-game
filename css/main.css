@@ -1,5 +1,4 @@
 /* Font setup. */
-
 @font-face {
   font-family: '8-BIT WONDER';
   src: url('../fonts/8bit_wonder/8-BIT WONDER.ttf') format('truetype');
@@ -7,13 +6,23 @@
 
 @font-face {
   font-family: 'codeman38_press-start-2p';
-  src: url('../fonts/codeman38_press-start-2p/PressStart2p.ttf');
+  src: url('../fonts/codeman38_press-start-2p/PressStart2p.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FreePixel'
+  src: url('../fonts/FreePixel.ttf') format('truetype');
+}
+
+html {
+  box-sizing: border-box;
+  color: #303030;
+  font-family: 'codeman38_press-start-2p', monospace;
 }
 
 /* Scaffolding formatting */
 
 body {
-  font-family: 'codeman38_press-start-2p', monospace;
   margin: 0 auto;
   height: 100%;
   position: absolute;
@@ -26,17 +35,44 @@ header {
   background-color: #d4ed82;
   margin: 0 auto;
   padding: 0.8em;
-  color: #303030;
 }
 
 .timer {
   /*margin-top: 0px;*/
-  padding: .1px;
-  padding-left: .5em;
+  padding: .5em;
+  /*padding-left: .5em;*/
+  border: black 2px solid;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: .25em;
 }
 
 .timer h1 {
   margin: .5em;
+}
+
+.playPause {
+  display: inline-block;
+  padding: 0.1em;
+}
+
+#playPause{
+  display: block;
+  padding: 0 1em;
+  /*margin-top: 2em;*/
+}
+
+#reset {
+  display: block;
+  padding: 1em 0 1em 1.5em;
+
+}
+
+button {
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  font-family: 'codeman38_press-start-2p', monospace;
 }
 
 .shop {

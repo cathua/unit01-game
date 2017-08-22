@@ -1,0 +1,91 @@
+body {
+  background: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  width: 190px;
+  height: 190px;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  float: left;
+  box-shadow: 0px 0px 1px #fff;
+}
+
+/*#f9c73b*/
+.pixel:nth-child(27), .pixel:nth-child(28), .pixel:nth-child(29), .pixel:nth-child(30),
+.pixel:nth-child(31), .pixel:nth-child(32),
+
+.pixel:nth-child(44), .pixel:nth-child(45), .pixel:nth-child(46), .pixel:nth-child(47), .pixel:nth-child(48), .pixel:nth-child(49), .pixel:nth-child(50), .pixel:nth-child(51), .pixel:nth-child(52),
+
+.pixel:nth-child(62), .pixel:nth-child(63), .pixel:nth-child(64), .pixel:nth-child(65), .pixel:nth-child(66), .pixel:nth-child(67), .pixel:nth-child(68), .pixel:nth-child(69), .pixel:nth-child(70), .pixel:nth-child(71), .pixel:nth-child(72),
+
+.pixel:nth-child(80), .pixel:nth-child(81), .pixel:nth-child(82), .pixel:nth-child(83), .pixel:nth-child(84), .pixel:nth-child(85), .pixel:nth-child(86), .pixel:nth-child(87), .pixel:nth-child(88), .pixel:nth-child(89), .pixel:nth-child(90), .pixel:nth-child(91), .pixel:nth-child(92),
+
+.pixel:nth-child(99), .pixel:nth-child(100), .pixel:nth-child(101),  .pixel:nth-child(102), .pixel:nth-child(103), .pixel:nth-child(104), .pixel:nth-child(105), .pixel:nth-child(106), .pixel:nth-child(107), .pixel:nth-child(108), .pixel:nth-child(109), .pixel:nth-child(110), .pixel:nth-child(111),
+
+.pixel:nth-child(117), .pixel:nth-child(118), .pixel:nth-child(119), .pixel:nth-child(120), .pixel:nth-child(121), .pixel:nth-child(122), .pixel:nth-child(123), .pixel:nth-child(124), .pixel:nth-child(125), .pixel:nth-child(126), .pixel:nth-child(127), .pixel:nth-child(128), .pixel:nth-child(129), .pixel:nth-child(130), .pixel:nth-child(131),
+
+.pixel:nth-child(136), .pixel:nth-child(137), .pixel:nth-child(138), .pixel:nth-child(139), .pixel:nth-child(141), .pixel:nth-child(142), .pixel:nth-child(143), .pixel:nth-child(144), .pixel:nth-child(145), .pixel:nth-child(147), .pixel:nth-child(148), .pixel:nth-child(149), .pixel:nth-child(150), .pixel:nth-child(155), .pixel:nth-child(156), .pixel:nth-child(157), .pixel:nth-child(158), .pixel:nth-child(160), .pixel:nth-child(161), .pixel:nth-child(162), .pixel:nth-child(163), .pixel:nth-child(164), .pixel:nth-child(166), .pixel:nth-child(167), .pixel:nth-child(168), .pixel:nth-child(169), .pixel:nth-child(174), .pixel:nth-child(175), .pixel:nth-child(176), .pixel:nth-child(178), .pixel:nth-child(180), .pixel:nth-child(181), .pixel:nth-child(182), .pixel:nth-child(184), .pixel:nth-child(186), .pixel:nth-child(187), .pixel:nth-child(188),
+
+.pixel:nth-child(196), .pixel:nth-child(197), .pixel:nth-child(198), .pixel:nth-child(202), .pixel:nth-child(203), .pixel:nth-child(204),
+
+.pixel:nth-child(214), .pixel:nth-child(215), .pixel:nth-child(216), .pixel:nth-child(217), .pixel:nth-child(218), .pixel:nth-child(219), .pixel:nth-child(220), .pixel:nth-child(221), .pixel:nth-child(222), .pixel:nth-child(223), .pixel:nth-child(224), .pixel:nth-child(225), .pixel:nth-child(233), .pixel:nth-child(234), .pixel:nth-child(235), .pixel:nth-child(236), .pixel:nth-child(237), .pixel:nth-child(238), .pixel:nth-child(239), .pixel:nth-child(240), .pixel:nth-child(241), .pixel:nth-child(242), .pixel:nth-child(243), .pixel:nth-child(252), .pixel:nth-child(253), .pixel:nth-child(254), .pixel:nth-child(255), .pixel:nth-child(256), .pixel:nth-child(239), .pixel:nth-child(240), .pixel:nth-child(241), .pixel:nth-child(242), .pixel:nth-child(257), .pixel:nth-child(258), .pixel:nth-child(259), .pixel:nth-child(260), .pixel:nth-child(261), .pixel:nth-child(262),
+
+.pixel:nth-child(272), .pixel:nth-child(273), .pixel:nth-child(274), .pixel:nth-child(275), .pixel:nth-child(276), .pixel:nth-child(277), .pixel:nth-child(278), .pixel:nth-child(279), .pixel:nth-child(280), .pixel:nth-child(293), .pixel:nth-child(294), .pixel:nth-child(295), .pixel:nth-child(296), .pixel:nth-child(297)
+
+ {
+  background-color: #f0ed9e;
+}
+
+/* cupcake filling. */
+
+
+/*e6af51*/
+
+
+.pixel:nth-child(8), .pixel:nth-child(9), .pixel:nth-child(10), .pixel:nth-child(11), .pixel:nth-child(12),
+/*1st row*/
+
+.pixel:nth-child(25), .pixel:nth-child(26), .pixel:nth-child(32), .pixel:nth-child(33),
+/*2nd row*/
+
+.pixel:nth-child(43), .pixel:nth-child(53),
+/*3rd row*/
+
+.pixel:nth-child(61), .pixel:nth-child(73),
+/*4th row*/
+
+.pixel:nth-child(79), .pixel:nth-child(93), .pixel:nth-child(98), .pixel:nth-child(112),
+/*5th 6th row*/
+
+.pixel:nth-child(116), .pixel:nth-child(132), .pixel:nth-child(135), .pixel:nth-child(140), .pixel:nth-child(146), .pixel:nth-child(151), .pixel:nth-child(154), .pixel:nth-child(159), .pixel:nth-child(165), .pixel:nth-child(170),
+/*7th 8th, 9th, 10th row*/
+
+.pixel:nth-child(173), .pixel:nth-child(177), .pixel:nth-child(179), .pixel:nth-child(183), .pixel:nth-child(185), .pixel:nth-child(189),
+/*11th row*/
+
+.pixel:nth-child(193), .pixel:nth-child(194), .pixel:nth-child(195), .pixel:nth-child(199), .pixel:nth-child(200), .pixel:nth-child(201), .pixel:nth-child(205), .pixel:nth-child(206), .pixel:nth-child(207),
+/*12thth row*/
+
+.pixel:nth-child(213), .pixel:nth-child(225), .pixel:nth-child(232), .pixel:nth-child(244), .pixel:nth-child(251), .pixel:nth-child(263),
+/*13th, 14th, and 15th row*/
+
+ .pixel:nth-child(271),.pixel:nth-child(281),
+/*16th row*/
+
+.pixel:nth-child(291), .pixel:nth-child(292), .pixel:nth-child(298), .pixel:nth-child(299),
+ /*16th row*/
+
+.pixel:nth-child(312), .pixel:nth-child(313), .pixel:nth-child(314), .pixel:nth-child(315), .pixel:nth-child(316) {
+  background-color: #000;
+}
+/*17th row*/
+
+/*cupcake outline.*/
