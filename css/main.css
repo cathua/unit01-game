@@ -65,7 +65,6 @@ header {
 #reset {
   display: block;
   padding: 1em 0 1em 1.5em;
-
 }
 
 button {
@@ -84,3 +83,34 @@ button {
   height: calc(100% - 95px - (100% - 95px - 30%));
   background-color: #ffc270;
 }
+
+.left {
+  float: left;
+}
+.cakeColor, .frostColor {
+  display: inline-block;
+}
+
+.box {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.center {
+  /*width: 33%;*/
+}
+
+.right {
+  float: right;
+  /*position: absolute;*/
+}
+
+
+
+/*.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+}*/
