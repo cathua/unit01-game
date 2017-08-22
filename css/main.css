@@ -17,24 +17,27 @@
 html {
   box-sizing: border-box;
   color: #303030;
-  font-family: 'codeman38_press-start-2p', monospace;
+  /*font-family: 'codeman38_press-start-2p', monospace;*/
 }
 
 /* Scaffolding formatting */
 
 body {
+  font-family: 'codeman38_press-start-2p', monospace;
   margin: 0 auto;
   height: 100%;
   position: absolute;
   width: 100%;
+  overflow: hidden;
 }
 
 header {
   font-family: "8-BIT WONDER", monospace;
   text-align: center;
   background-color: #d4ed82;
-  margin: 0 auto;
+  margin:;
   padding: 0.8em;
+  vertical-align: middle;
 }
 
 .timer {
@@ -75,42 +78,26 @@ button {
 }
 
 .shop {
-  height: calc(100% - 95px - 30%);
+  height: calc(100% - 83px - 30%);
   background-color: #aee0ef;
 }
 
 .station {
-  height: calc(100% - 95px - (100% - 95px - 30%));
+  height: calc(100% - 70%);
   background-color: #ffc270;
+  text-align: center;
 }
 
-.left {
-  float: left;
-}
-.cakeColor, .frostColor {
-  display: inline-block;
+.innerBox {
+  height: 50%;
 }
 
 .box {
-  display: flex;
   padding: 1em;
-  flex-direction: column;
-}
-
-.center {
-  /*width: 33%;*/
-}
-
-.right {
-  float: right;
-  /*position: absolute;*/
 }
 
 
-
-/*.flexcontainer {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
-}*/
+.submit, .reset {
+  /*float: right;*/
+  display: inline;
+}

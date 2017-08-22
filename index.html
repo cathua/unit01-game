@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>8-Bit Bakeshoppe</title>
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -21,47 +22,55 @@
     </nav> -->
       </header>
     </div>
-    <div class="shop">
+    <div class="shop row">
       <!-- <div class="window"> -->
       <!-- </div> -->
-      <div class="timer">
-        <h4 id="timer">00:00</h4>
-      </div>
-      <div class="playPause">
-        <button id="playPause">&#9658; PLAY</button>
-        <button id="reset">   RESET</button>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="timer">
+          <h4 id="timer">00:00</h4>
+        </div>
+        <div class="playPause">
+          <button id="playPause">&#9658; PLAY</button>
+          <button id="reset">   RESET</button>
+        </div>
       </div>
 
 
     </div>
-    <div class="station">
-      <div class="left">
-        <div class="box">
+    <div class="station row">
+      <div class="left col-md-3 col-sm-3 col-xs-3">
+        <div class="box innerBox">
           <div class="cakeColor">
-            <h5>Cake Flavor</h5>
+            <h5>Cake</h5>
           </div>
         </div>
-        <div class="box">
+        <div class="box innerBox">
           <div class="frostColor">
-            <h5>Frosting Flavor</h5>
+            <h5>Frosting</h5>
           </div>
         </div>
       </div>
-      <div class="center">
+      <div class="center col-md-6 col-sm-6 col-xs-6">
         <div class="box">
           <div class="workspace">
             <h5>Your Cupcake</h5>
+            <div class="buttons">
+              <button class="submit">ORDER UP</button>
+              <br/>
+              <br />
+              <button class="reset">RESET</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="right">
-        <div class="box">
+      <div class="right col-md-3 col-sm-3 col-xs-3">
+        <div class="box innerBox">
           <div class="sprinkles">
-            <h5>Sprinkle Color</h5>
+            <h5>Sprinkles</h5>
           </div>
         </div>
         <div class="box">
-          <div class="topping">
+          <div class="topping innerBox">
             <h5>Topping</h5>
           </div>
         </div>
