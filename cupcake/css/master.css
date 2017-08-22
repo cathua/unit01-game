@@ -6,9 +6,22 @@ body {
   align-items: center;
 }
 
-.canvas {
+.body {
+  position: absolute;
+}
+
+.cake {
   width: 190px;
   height: 190px;
+  /*position: absolute;*/
+}
+
+.frosting {
+  width:190px;
+  height: 110px;
+  position: relative;
+  z-index: 2;
+  bottom: 20px;
 }
 
 .pixel {
@@ -19,26 +32,26 @@ body {
 }
 
 /*#f9c73b*/
-.pixel:nth-child(27), .pixel:nth-child(28), .pixel:nth-child(29), .pixel:nth-child(30),
-.pixel:nth-child(31), .pixel:nth-child(32),
+.cake:nth-child(27), .cake:nth-child(28), .cake:nth-child(29), .cake:nth-child(30),
+.cake:nth-child(31), .cake:nth-child(32),
 
-.pixel:nth-child(44), .pixel:nth-child(45), .pixel:nth-child(46), .pixel:nth-child(47), .pixel:nth-child(48), .pixel:nth-child(49), .pixel:nth-child(50), .pixel:nth-child(51), .pixel:nth-child(52),
+.cake:nth-child(44), .cake:nth-child(45), .cake:nth-child(46), .cake:nth-child(47), .cake:nth-child(48), .cake:nth-child(49), .cake:nth-child(50), .cake:nth-child(51), .cake:nth-child(52),
 
-.pixel:nth-child(62), .pixel:nth-child(63), .pixel:nth-child(64), .pixel:nth-child(65), .pixel:nth-child(66), .pixel:nth-child(67), .pixel:nth-child(68), .pixel:nth-child(69), .pixel:nth-child(70), .pixel:nth-child(71), .pixel:nth-child(72),
+.cake:nth-child(62), .cake:nth-child(63), .cake:nth-child(64), .cake:nth-child(65), .cake:nth-child(66), .cake:nth-child(67), .cake:nth-child(68), .cake:nth-child(69), .cake:nth-child(70), .cake:nth-child(71), .cake:nth-child(72),
 
-.pixel:nth-child(80), .pixel:nth-child(81), .pixel:nth-child(82), .pixel:nth-child(83), .pixel:nth-child(84), .pixel:nth-child(85), .pixel:nth-child(86), .pixel:nth-child(87), .pixel:nth-child(88), .pixel:nth-child(89), .pixel:nth-child(90), .pixel:nth-child(91), .pixel:nth-child(92),
+.cake:nth-child(80), .cake:nth-child(81), .cake:nth-child(82), .cake:nth-child(83), .cake:nth-child(84), .cake:nth-child(85), .cake:nth-child(86), .cake:nth-child(87), .cake:nth-child(88), .cake:nth-child(89), .cake:nth-child(90), .cake:nth-child(91), .cake:nth-child(92),
 
-.pixel:nth-child(99), .pixel:nth-child(100), .pixel:nth-child(101),  .pixel:nth-child(102), .pixel:nth-child(103), .pixel:nth-child(104), .pixel:nth-child(105), .pixel:nth-child(106), .pixel:nth-child(107), .pixel:nth-child(108), .pixel:nth-child(109), .pixel:nth-child(110), .pixel:nth-child(111),
+.cake:nth-child(99), .cake:nth-child(100), .cake:nth-child(101),  .cake:nth-child(102), .cake:nth-child(103), .cake:nth-child(104), .cake:nth-child(105), .cake:nth-child(106), .cake:nth-child(107), .cake:nth-child(108), .cake:nth-child(109), .cake:nth-child(110), .cake:nth-child(111),
 
-.pixel:nth-child(117), .pixel:nth-child(118), .pixel:nth-child(119), .pixel:nth-child(120), .pixel:nth-child(121), .pixel:nth-child(122), .pixel:nth-child(123), .pixel:nth-child(124), .pixel:nth-child(125), .pixel:nth-child(126), .pixel:nth-child(127), .pixel:nth-child(128), .pixel:nth-child(129), .pixel:nth-child(130), .pixel:nth-child(131),
+.cake:nth-child(117), .cake:nth-child(118), .cake:nth-child(119), .cake:nth-child(120), .cake:nth-child(121), .cake:nth-child(122), .cake:nth-child(123), .cake:nth-child(124), .cake:nth-child(125), .cake:nth-child(126), .cake:nth-child(127), .cake:nth-child(128), .cake:nth-child(129), .cake:nth-child(130), .cake:nth-child(131),
 
-.pixel:nth-child(136), .pixel:nth-child(137), .pixel:nth-child(138), .pixel:nth-child(139), .pixel:nth-child(141), .pixel:nth-child(142), .pixel:nth-child(143), .pixel:nth-child(144), .pixel:nth-child(145), .pixel:nth-child(147), .pixel:nth-child(148), .pixel:nth-child(149), .pixel:nth-child(150), .pixel:nth-child(155), .pixel:nth-child(156), .pixel:nth-child(157), .pixel:nth-child(158), .pixel:nth-child(160), .pixel:nth-child(161), .pixel:nth-child(162), .pixel:nth-child(163), .pixel:nth-child(164), .pixel:nth-child(166), .pixel:nth-child(167), .pixel:nth-child(168), .pixel:nth-child(169), .pixel:nth-child(174), .pixel:nth-child(175), .pixel:nth-child(176), .pixel:nth-child(178), .pixel:nth-child(180), .pixel:nth-child(181), .pixel:nth-child(182), .pixel:nth-child(184), .pixel:nth-child(186), .pixel:nth-child(187), .pixel:nth-child(188),
+.cake:nth-child(136), .cake:nth-child(137), .cake:nth-child(138), .cake:nth-child(139), .cake:nth-child(141), .cake:nth-child(142), .cake:nth-child(143), .cake:nth-child(144), .cake:nth-child(145), .cake:nth-child(147), .cake:nth-child(148), .cake:nth-child(149), .cake:nth-child(150), .cake:nth-child(155), .cake:nth-child(156), .cake:nth-child(157), .cake:nth-child(158), .cake:nth-child(160), .cake:nth-child(161), .cake:nth-child(162), .cake:nth-child(163), .cake:nth-child(164), .cake:nth-child(166), .cake:nth-child(167), .cake:nth-child(168), .cake:nth-child(169), .cake:nth-child(174), .cake:nth-child(175), .cake:nth-child(176), .cake:nth-child(178), .cake:nth-child(180), .cake:nth-child(181), .cake:nth-child(182), .cake:nth-child(184), .cake:nth-child(186), .cake:nth-child(187), .cake:nth-child(188),
 
-.pixel:nth-child(196), .pixel:nth-child(197), .pixel:nth-child(198), .pixel:nth-child(202), .pixel:nth-child(203), .pixel:nth-child(204),
+.cake:nth-child(196), .cake:nth-child(197), .cake:nth-child(198), .cake:nth-child(202), .cake:nth-child(203), .cake:nth-child(204),
 
-.pixel:nth-child(214), .pixel:nth-child(215), .pixel:nth-child(216), .pixel:nth-child(217), .pixel:nth-child(218), .pixel:nth-child(219), .pixel:nth-child(220), .pixel:nth-child(221), .pixel:nth-child(222), .pixel:nth-child(223), .pixel:nth-child(224), .pixel:nth-child(225), .pixel:nth-child(233), .pixel:nth-child(234), .pixel:nth-child(235), .pixel:nth-child(236), .pixel:nth-child(237), .pixel:nth-child(238), .pixel:nth-child(239), .pixel:nth-child(240), .pixel:nth-child(241), .pixel:nth-child(242), .pixel:nth-child(243), .pixel:nth-child(252), .pixel:nth-child(253), .pixel:nth-child(254), .pixel:nth-child(255), .pixel:nth-child(256), .pixel:nth-child(239), .pixel:nth-child(240), .pixel:nth-child(241), .pixel:nth-child(242), .pixel:nth-child(257), .pixel:nth-child(258), .pixel:nth-child(259), .pixel:nth-child(260), .pixel:nth-child(261), .pixel:nth-child(262),
+.cake:nth-child(214), .cake:nth-child(215), .cake:nth-child(216), .cake:nth-child(217), .cake:nth-child(218), .cake:nth-child(219), .cake:nth-child(220), .cake:nth-child(221), .cake:nth-child(222), .cake:nth-child(223), .cake:nth-child(224), .cake:nth-child(225), .cake:nth-child(233), .cake:nth-child(234), .cake:nth-child(235), .cake:nth-child(236), .cake:nth-child(237), .cake:nth-child(238), .cake:nth-child(239), .cake:nth-child(240), .cake:nth-child(241), .cake:nth-child(242), .cake:nth-child(243), .cake:nth-child(252), .cake:nth-child(253), .cake:nth-child(254), .cake:nth-child(255), .cake:nth-child(256), .cake:nth-child(239), .cake:nth-child(240), .cake:nth-child(241), .cake:nth-child(242), .cake:nth-child(257), .cake:nth-child(258), .cake:nth-child(259), .cake:nth-child(260), .cake:nth-child(261), .cake:nth-child(262),
 
-.pixel:nth-child(272), .pixel:nth-child(273), .pixel:nth-child(274), .pixel:nth-child(275), .pixel:nth-child(276), .pixel:nth-child(277), .pixel:nth-child(278), .pixel:nth-child(279), .pixel:nth-child(280), .pixel:nth-child(293), .pixel:nth-child(294), .pixel:nth-child(295), .pixel:nth-child(296), .pixel:nth-child(297)
+.cake:nth-child(272), .cake:nth-child(273), .cake:nth-child(274), .cake:nth-child(275), .cake:nth-child(276), .cake:nth-child(277), .cake:nth-child(278), .cake:nth-child(279), .cake:nth-child(280)
 
  {
   background-color: #f0ed9e;
@@ -50,42 +63,85 @@ body {
 /*e6af51*/
 
 
-.pixel:nth-child(8), .pixel:nth-child(9), .pixel:nth-child(10), .pixel:nth-child(11), .pixel:nth-child(12),
+
+
+.cake:nth-child(8), .cake:nth-child(9), .cake:nth-child(10), .cake:nth-child(11), .cake:nth-child(12),
 /*1st row*/
 
-.pixel:nth-child(25), .pixel:nth-child(26), .pixel:nth-child(32), .pixel:nth-child(33),
+.cake:nth-child(25), .cake:nth-child(26), .cake:nth-child(32), .cake:nth-child(33),
 /*2nd row*/
 
-.pixel:nth-child(43), .pixel:nth-child(53),
+.cake:nth-child(43), .cake:nth-child(53),
 /*3rd row*/
 
-.pixel:nth-child(61), .pixel:nth-child(73),
+.cake:nth-child(61), .cake:nth-child(73),
 /*4th row*/
 
-.pixel:nth-child(79), .pixel:nth-child(93), .pixel:nth-child(98), .pixel:nth-child(112),
+.cake:nth-child(79), .cake:nth-child(93), .cake:nth-child(98), .cake:nth-child(112),
 /*5th 6th row*/
 
-.pixel:nth-child(116), .pixel:nth-child(132), .pixel:nth-child(135), .pixel:nth-child(140), .pixel:nth-child(146), .pixel:nth-child(151), .pixel:nth-child(154), .pixel:nth-child(159), .pixel:nth-child(165), .pixel:nth-child(170),
+.cake:nth-child(116), .cake:nth-child(132), .cake:nth-child(135), .cake:nth-child(140), .cake:nth-child(146), .cake:nth-child(151), .cake:nth-child(154), .cake:nth-child(159), .cake:nth-child(165), .cake:nth-child(170),
 /*7th 8th, 9th, 10th row*/
 
-.pixel:nth-child(173), .pixel:nth-child(177), .pixel:nth-child(179), .pixel:nth-child(183), .pixel:nth-child(185), .pixel:nth-child(189),
+.cake:nth-child(173), .cake:nth-child(177), .cake:nth-child(179), .cake:nth-child(183), .cake:nth-child(185), .cake:nth-child(189),
 /*11th row*/
 
-.pixel:nth-child(193), .pixel:nth-child(194), .pixel:nth-child(195), .pixel:nth-child(199), .pixel:nth-child(200), .pixel:nth-child(201), .pixel:nth-child(205), .pixel:nth-child(206), .pixel:nth-child(207),
-/*12thth row*/
+.cake:nth-child(193), .cake:nth-child(194), .cake:nth-child(195), .cake:nth-child(199), .cake:nth-child(200), .cake:nth-child(201), .cake:nth-child(205), .cake:nth-child(206), .cake:nth-child(207),
+/*12th row*/
 
-.pixel:nth-child(213), .pixel:nth-child(225), .pixel:nth-child(232), .pixel:nth-child(244), .pixel:nth-child(251), .pixel:nth-child(263),
+.cake:nth-child(213), .cake:nth-child(225), .cake:nth-child(232), .cake:nth-child(244), .cake:nth-child(251), .cake:nth-child(263),
 /*13th, 14th, and 15th row*/
 
- .pixel:nth-child(271),.pixel:nth-child(281),
+ .cake:nth-child(271),.cake:nth-child(281),
 /*16th row*/
 
-.pixel:nth-child(291), .pixel:nth-child(292), .pixel:nth-child(298), .pixel:nth-child(299),
+.cake:nth-child(291), .cake:nth-child(292), .cake:nth-child(293), .cake:nth-child(294), .cake:nth-child(295), .cake:nth-child(296), .cake:nth-child(297), .cake:nth-child(298), .cake:nth-child(299)
  /*16th row*/
 
-.pixel:nth-child(312), .pixel:nth-child(313), .pixel:nth-child(314), .pixel:nth-child(315), .pixel:nth-child(316) {
+{
   background-color: #000;
 }
-/*17th row*/
 
 /*cupcake outline.*/
+
+.frosting:nth-child(8), .frosting:nth-child(9), .frosting:nth-child(10), .frosting:nth-child(11), .frosting:nth-child(12),
+/*1st row*/
+
+.frosting:nth-child(25), .frosting:nth-child(26), .frosting:nth-child(32), .frosting:nth-child(33),
+/*2nd row*/
+
+.frosting:nth-child(43), .frosting:nth-child(53),
+/*3rd row*/
+
+.frosting:nth-child(61), .frosting:nth-child(73),
+/*4th row*/
+
+.frosting:nth-child(79), .frosting:nth-child(93), .frosting:nth-child(98), .frosting:nth-child(112),
+/*5th 6th row*/
+
+.frosting:nth-child(116), .frosting:nth-child(132), .frosting:nth-child(135), .frosting:nth-child(140), .frosting:nth-child(146), .frosting:nth-child(151), .frosting:nth-child(154), .frosting:nth-child(159), .frosting:nth-child(165), .frosting:nth-child(170),
+/*7th 8th, 9th, 10th row*/
+
+.frosting:nth-child(173), .frosting:nth-child(177), .frosting:nth-child(179), .frosting:nth-child(183), .frosting:nth-child(185), .frosting:nth-child(189),
+
+.frosting:nth-child(193), .frosting:nth-child(194), .frosting:nth-child(195), .frosting:nth-child(199), .frosting:nth-child(200), .frosting:nth-child(201), .frosting:nth-child(205), .frosting:nth-child(206), .frosting:nth-child(207) {
+  background-color: #000;
+}
+
+/* frosting outline*/
+
+.frosting:nth-child(27), .frosting:nth-child(28), .frosting:nth-child(29), .frosting:nth-child(30), .frosting:nth-child(31),
+
+.frosting:nth-child(44), .frosting:nth-child(45), .frosting:nth-child(46), .frosting:nth-child(47), .frosting:nth-child(48), .frosting:nth-child(49), .frosting:nth-child(50), .frosting:nth-child(51), .frosting:nth-child(52),
+
+.frosting:nth-child(62), .frosting:nth-child(63), .frosting:nth-child(64), .frosting:nth-child(65), .frosting:nth-child(66), .frosting:nth-child(67), .frosting:nth-child(68), .frosting:nth-child(69), .frosting:nth-child(70), .frosting:nth-child(71), .frosting:nth-child(72),
+
+.frosting:nth-child(80), .frosting:nth-child(81), .frosting:nth-child(82), .frosting:nth-child(83), .frosting:nth-child(84), .frosting:nth-child(85), .frosting:nth-child(86), .frosting:nth-child(87), .frosting:nth-child(88), .frosting:nth-child(89), .frosting:nth-child(90), .frosting:nth-child(91), .frosting:nth-child(92),
+
+.frosting:nth-child(99), .frosting:nth-child(100), .frosting:nth-child(101),  .frosting:nth-child(102), .frosting:nth-child(103), .frosting:nth-child(104), .frosting:nth-child(105), .frosting:nth-child(106), .frosting:nth-child(107), .frosting:nth-child(108), .frosting:nth-child(109), .frosting:nth-child(110), .frosting:nth-child(111),
+
+.frosting:nth-child(117), .frosting:nth-child(118), .frosting:nth-child(119), .frosting:nth-child(120), .frosting:nth-child(121), .frosting:nth-child(122), .frosting:nth-child(123), .frosting:nth-child(124), .frosting:nth-child(125), .frosting:nth-child(126), .frosting:nth-child(127), .frosting:nth-child(128), .frosting:nth-child(129), .frosting:nth-child(130), .frosting:nth-child(131),
+
+.frosting:nth-child(136), .frosting:nth-child(137), .frosting:nth-child(138), .frosting:nth-child(139), .frosting:nth-child(141), .frosting:nth-child(142), .frosting:nth-child(143), .frosting:nth-child(144), .frosting:nth-child(145), .frosting:nth-child(147), .frosting:nth-child(148), .frosting:nth-child(149), .frosting:nth-child(150), .frosting:nth-child(155), .frosting:nth-child(156), .frosting:nth-child(157), .frosting:nth-child(158), .frosting:nth-child(160), .frosting:nth-child(161), .frosting:nth-child(162), .frosting:nth-child(163), .frosting:nth-child(164), .frosting:nth-child(166), .frosting:nth-child(167), .frosting:nth-child(168), .frosting:nth-child(169), .frosting:nth-child(174), .frosting:nth-child(175), .frosting:nth-child(176), .frosting:nth-child(180), .frosting:nth-child(181), .frosting:nth-child(182), .frosting:nth-child(186), .frosting:nth-child(187), .frosting:nth-child(188) {
+  background-color: #fff;
+}
