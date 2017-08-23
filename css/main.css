@@ -115,7 +115,7 @@ button {
   flex-direction: row;
 }
 
-#color1, #color2, #color3, #color4 {
+#color1, #color2, #color3, #color4, #frost1, #frost2, #frost3, #frost4 {
   width: 2em;
   height: 2em;
   margin: 10px;
@@ -137,7 +137,21 @@ button {
   background-color: #4bbaf2;
 }
 
+#frost1 {
+  background-color: #fff;
+}
 
+#frost2 {
+  background-color: #563403;
+}
+
+#frost3 {
+  background-color: #ae7cd3;
+}
+
+#frost4{
+  background-color: #b4f99f;
+}
 
 /*begin cupcake formatting*/
 
