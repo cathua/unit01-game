@@ -122,7 +122,7 @@ button {
 }
 
 #color1 {
-  background-color: #ffa8e6;
+  background-color: #ffc9f0;
 }
 
 #color2 {
@@ -134,7 +134,7 @@ button {
 }
 
 #color4 {
-  background-color: #4bbaf2;
+  background-color: #a0daf7;
 }
 
 #frost1 {
@@ -146,7 +146,7 @@ button {
 }
 
 #frost3 {
-  background-color: #ae7cd3;
+  background-color: #c9ceff;
 }
 
 #frost4{
@@ -196,72 +196,41 @@ button {
 .randCake{
   width: 475px;
   height: 475px;
+  vertical-align: middle;
+}
+
+.randBody{
+  vertical-align: middle;
+  bottom: -350px;
 }
 
 .randFrost {
   width: 475px;
   height: 275px;
-  bottom: -135px;
-  left: 230px;
+  bottom: -92px;
 }
 
-.randBody, .randFrostTop{
+.randCakeBody, .randFrostTop{
   width: 25px;
   height: 25px;
 }
 
-/*#f9c73b*/
-.cake:nth-child(27), .cake:nth-child(28), .cake:nth-child(29), .cake:nth-child(30),
-.cake:nth-child(31), .cake:nth-child(32),
+.cake:nth-child(178), .cake:nth-child(184),
 
-.cake:nth-child(44), .cake:nth-child(45), .cake:nth-child(46), .cake:nth-child(47), .cake:nth-child(48), .cake:nth-child(49), .cake:nth-child(50), .cake:nth-child(51), .cake:nth-child(52),
+.cake:nth-child(196), .cake:nth-child(197),
 
-.cake:nth-child(62), .cake:nth-child(63), .cake:nth-child(64), .cake:nth-child(65), .cake:nth-child(66), .cake:nth-child(67), .cake:nth-child(68), .cake:nth-child(69), .cake:nth-child(70), .cake:nth-child(71), .cake:nth-child(72),
-
-.cake:nth-child(80), .cake:nth-child(81), .cake:nth-child(82), .cake:nth-child(83), .cake:nth-child(84), .cake:nth-child(85), .cake:nth-child(86), .cake:nth-child(87), .cake:nth-child(88), .cake:nth-child(89), .cake:nth-child(90), .cake:nth-child(91), .cake:nth-child(92),
-
-.cake:nth-child(99), .cake:nth-child(100), .cake:nth-child(101),  .cake:nth-child(102), .cake:nth-child(103), .cake:nth-child(104), .cake:nth-child(105), .cake:nth-child(106), .cake:nth-child(107), .cake:nth-child(108), .cake:nth-child(109), .cake:nth-child(110), .cake:nth-child(111),
-
-.cake:nth-child(117), .cake:nth-child(118), .cake:nth-child(119), .cake:nth-child(120), .cake:nth-child(121), .cake:nth-child(122), .cake:nth-child(123), .cake:nth-child(124), .cake:nth-child(125), .cake:nth-child(126), .cake:nth-child(127), .cake:nth-child(128), .cake:nth-child(129), .cake:nth-child(130), .cake:nth-child(131),
-
-.cake:nth-child(136), .cake:nth-child(137), .cake:nth-child(138), .cake:nth-child(139), .cake:nth-child(141), .cake:nth-child(142), .cake:nth-child(143), .cake:nth-child(144), .cake:nth-child(145), .cake:nth-child(147), .cake:nth-child(148), .cake:nth-child(149), .cake:nth-child(150), .cake:nth-child(155), .cake:nth-child(156), .cake:nth-child(157), .cake:nth-child(158), .cake:nth-child(160), .cake:nth-child(161), .cake:nth-child(162), .cake:nth-child(163), .cake:nth-child(164), .cake:nth-child(166), .cake:nth-child(167), .cake:nth-child(168), .cake:nth-child(169), .cake:nth-child(174), .cake:nth-child(175), .cake:nth-child(176), .cake:nth-child(178), .cake:nth-child(180), .cake:nth-child(181), .cake:nth-child(182), .cake:nth-child(184), .cake:nth-child(186), .cake:nth-child(187), .cake:nth-child(188),
-
-.cake:nth-child(196), .cake:nth-child(197), .cake:nth-child(198), .cake:nth-child(202), .cake:nth-child(203), .cake:nth-child(204),
+.cake:nth-child(198), .cake:nth-child(202), .cake:nth-child(203), .cake:nth-child(204),
 
 .cake:nth-child(214), .cake:nth-child(215), .cake:nth-child(216), .cake:nth-child(217), .cake:nth-child(218), .cake:nth-child(219), .cake:nth-child(220), .cake:nth-child(221), .cake:nth-child(222), .cake:nth-child(223), .cake:nth-child(224), .cake:nth-child(225), .cake:nth-child(233), .cake:nth-child(234), .cake:nth-child(235), .cake:nth-child(236), .cake:nth-child(237), .cake:nth-child(238), .cake:nth-child(239), .cake:nth-child(240), .cake:nth-child(241), .cake:nth-child(242), .cake:nth-child(243), .cake:nth-child(252), .cake:nth-child(253), .cake:nth-child(254), .cake:nth-child(255), .cake:nth-child(256), .cake:nth-child(239), .cake:nth-child(240), .cake:nth-child(241), .cake:nth-child(242), .cake:nth-child(257), .cake:nth-child(258), .cake:nth-child(259), .cake:nth-child(260), .cake:nth-child(261), .cake:nth-child(262),
 
 .cake:nth-child(272), .cake:nth-child(273), .cake:nth-child(274), .cake:nth-child(275), .cake:nth-child(276), .cake:nth-child(277), .cake:nth-child(278), .cake:nth-child(279), .cake:nth-child(280)
 
-{
+ {
   background-color: #f0ed9e;
 }
 
 /* cupcake filling. */
 
-
-.cake:nth-child(8), .cake:nth-child(9), .cake:nth-child(10), .cake:nth-child(11), .cake:nth-child(12),
-/*1st row*/
-
-.cake:nth-child(25), .cake:nth-child(26), .cake:nth-child(32), .cake:nth-child(33),
-/*2nd row*/
-
-.cake:nth-child(43), .cake:nth-child(53),
-/*3rd row*/
-
-.cake:nth-child(61), .cake:nth-child(73),
-/*4th row*/
-
-.cake:nth-child(79), .cake:nth-child(93), .cake:nth-child(98), .cake:nth-child(112),
-/*5th 6th row*/
-
-.cake:nth-child(116), .cake:nth-child(132), .cake:nth-child(135), .cake:nth-child(140), .cake:nth-child(146), .cake:nth-child(151), .cake:nth-child(154), .cake:nth-child(159), .cake:nth-child(165), .cake:nth-child(170),
-/*7th 8th, 9th, 10th row*/
-
-.cake:nth-child(173), .cake:nth-child(177), .cake:nth-child(179), .cake:nth-child(183), .cake:nth-child(185), .cake:nth-child(189),
-/*11th row*/
-
-.cake:nth-child(193), .cake:nth-child(194), .cake:nth-child(195), .cake:nth-child(199), .cake:nth-child(200), .cake:nth-child(201), .cake:nth-child(205), .cake:nth-child(206), .cake:nth-child(207),
-/*12th row*/
 
 .cake:nth-child(213), .cake:nth-child(225), .cake:nth-child(232), .cake:nth-child(244), .cake:nth-child(251), .cake:nth-child(263),
 /*13th, 14th, and 15th row*/
@@ -271,7 +240,6 @@ button {
 
 .cake:nth-child(291), .cake:nth-child(292), .cake:nth-child(293), .cake:nth-child(294), .cake:nth-child(295), .cake:nth-child(296), .cake:nth-child(297), .cake:nth-child(298), .cake:nth-child(299)
 /*16th row*/
-
 {
   background-color: #000;
 }
@@ -319,5 +287,7 @@ button {
 .frosting:nth-child(136), .frosting:nth-child(137), .frosting:nth-child(138), .frosting:nth-child(139), .frosting:nth-child(141), .frosting:nth-child(142), .frosting:nth-child(143), .frosting:nth-child(144), .frosting:nth-child(145), .frosting:nth-child(147), .frosting:nth-child(148), .frosting:nth-child(149), .frosting:nth-child(150), .frosting:nth-child(155), .frosting:nth-child(156), .frosting:nth-child(157), .frosting:nth-child(158), .frosting:nth-child(160), .frosting:nth-child(161), .frosting:nth-child(162), .frosting:nth-child(163), .frosting:nth-child(164), .frosting:nth-child(166), .frosting:nth-child(167), .frosting:nth-child(168), .frosting:nth-child(169), .frosting:nth-child(174), .frosting:nth-child(175), .frosting:nth-child(176), .frosting:nth-child(180), .frosting:nth-child(181), .frosting:nth-child(182), .frosting:nth-child(186), .frosting:nth-child(187), .frosting:nth-child(188) {
   background-color: #fff;
 }
+
+/*frosting filling*/
 
 /*end cupcake formatting*/
