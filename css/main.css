@@ -226,7 +226,7 @@ button {
 .cake:nth-child(272), .cake:nth-child(273), .cake:nth-child(274), .cake:nth-child(275), .cake:nth-child(276), .cake:nth-child(277), .cake:nth-child(278), .cake:nth-child(279), .cake:nth-child(280)
 
  {
-  background-color: #f0ed9e;
+  background-color: #999999;
 }
 
 /* cupcake filling. */
@@ -285,7 +285,7 @@ button {
 .frosting:nth-child(117), .frosting:nth-child(118), .frosting:nth-child(119), .frosting:nth-child(120), .frosting:nth-child(121), .frosting:nth-child(122), .frosting:nth-child(123), .frosting:nth-child(124), .frosting:nth-child(125), .frosting:nth-child(126), .frosting:nth-child(127), .frosting:nth-child(128), .frosting:nth-child(129), .frosting:nth-child(130), .frosting:nth-child(131),
 
 .frosting:nth-child(136), .frosting:nth-child(137), .frosting:nth-child(138), .frosting:nth-child(139), .frosting:nth-child(141), .frosting:nth-child(142), .frosting:nth-child(143), .frosting:nth-child(144), .frosting:nth-child(145), .frosting:nth-child(147), .frosting:nth-child(148), .frosting:nth-child(149), .frosting:nth-child(150), .frosting:nth-child(155), .frosting:nth-child(156), .frosting:nth-child(157), .frosting:nth-child(158), .frosting:nth-child(160), .frosting:nth-child(161), .frosting:nth-child(162), .frosting:nth-child(163), .frosting:nth-child(164), .frosting:nth-child(166), .frosting:nth-child(167), .frosting:nth-child(168), .frosting:nth-child(169), .frosting:nth-child(174), .frosting:nth-child(175), .frosting:nth-child(176), .frosting:nth-child(180), .frosting:nth-child(181), .frosting:nth-child(182), .frosting:nth-child(186), .frosting:nth-child(187), .frosting:nth-child(188) {
-  background-color: #fff;
+  background-color: #999999;
 }
 
 /*frosting filling*/

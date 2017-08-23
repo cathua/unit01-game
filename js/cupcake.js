@@ -65,7 +65,7 @@ $('#frost4').on('click', function () {
 });
 // modifying your cupcake.
 
-$(".submit").on('click', function (e) {
+$('.submit').on('click', function (e) {
   e.preventDefault();
   var selectCakeColor = $($('.cakeSelect')[cakeSelectIndex[0]]).css('background-color');
   var selectFrostColor = $($('.frostSelect')[frostSelectIndex[0]]).css('background-color');
@@ -74,4 +74,15 @@ $(".submit").on('click', function (e) {
   } else {
     console.log("sads");
   }
-})
+});
+// submitting the cupcake to the customer.
+
+$('.reset').on('click', function() {
+  for (let i = 0; i < cakeSelectIndex.length; i++) {
+    $($('.cakeSelect')[cakeSelectIndex[i]]).css('background-color', '#999999');
+  };
+  for (let i = 0; i < frostSelectIndex.length; i++) {
+    $($('.frostSelect')[frostSelectIndex[i]]).css('background-color', '#999999');
+  };
+});
+// reset your cupcake.
