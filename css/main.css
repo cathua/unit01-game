@@ -101,13 +101,52 @@ button {
   height: 100%
 }
 
+
+.submit, .reset {
+  /*float: right;*/
+  display: inline-block;
+  margin-right: 2px;
+  vertical-align: baseline;
+}
+
+.colorSelect {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+#color1, #color2, #color3, #color4 {
+  width: 2em;
+  height: 2em;
+  margin: 10px;
+}
+
+#color1 {
+  background-color: #ffa8e6;
+}
+
+#color2 {
+  background-color: #f0ed9e;
+}
+
+#color3 {
+  background-color: #563403;
+}
+
+#color4 {
+  background-color: #4bbaf2;
+}
+
+
+
 /*begin cupcake formatting*/
 
 .cupcake {
-  height: 100vh;
+  height: 9em;
   display: flex;
   justify-content: center;
   align-items: center;
+  /*padding: 1em;*/
 }
 
 .body {
@@ -115,24 +154,46 @@ button {
 }
 
 .cake {
-  width: 190px;
-  height: 190px;
+  width: 95px;
+  height: 95px;
   /*position: absolute;*/
 }
 
 .frosting {
-  width:190px;
-  height: 110px;
+  width:95px;
+  height: 55px;
   position: relative;
   z-index: 2;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 .pixel {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   float: left;
-  box-shadow: 0px 0px 1px #fff;
+  /*box-shadow: 0px 0px 1px #fff;*/
+}
+
+.randCup {
+  height: 10em;
+  align-items: center;
+}
+
+.randCake{
+  width: 475px;
+  height: 475px;
+}
+
+.randFrost {
+  width: 475px;
+  height: 275px;
+  bottom: -135px;
+  left: 230px;
+}
+
+.randBody, .randFrostTop{
+  width: 25px;
+  height: 25px;
 }
 
 /*#f9c73b*/
@@ -157,7 +218,7 @@ button {
 
 .cake:nth-child(272), .cake:nth-child(273), .cake:nth-child(274), .cake:nth-child(275), .cake:nth-child(276), .cake:nth-child(277), .cake:nth-child(278), .cake:nth-child(279), .cake:nth-child(280)
 
- {
+{
   background-color: #f0ed9e;
 }
 
@@ -191,11 +252,11 @@ button {
 .cake:nth-child(213), .cake:nth-child(225), .cake:nth-child(232), .cake:nth-child(244), .cake:nth-child(251), .cake:nth-child(263),
 /*13th, 14th, and 15th row*/
 
- .cake:nth-child(271),.cake:nth-child(281),
+.cake:nth-child(271),.cake:nth-child(281),
 /*16th row*/
 
 .cake:nth-child(291), .cake:nth-child(292), .cake:nth-child(293), .cake:nth-child(294), .cake:nth-child(295), .cake:nth-child(296), .cake:nth-child(297), .cake:nth-child(298), .cake:nth-child(299)
- /*16th row*/
+/*16th row*/
 
 {
   background-color: #000;
@@ -246,10 +307,3 @@ button {
 }
 
 /*end cupcake formatting*/
-
-.submit, .reset {
-  /*float: right;*/
-  display: inline-block;
-  margin-right: 2px;
-  vertical-align: baseline;
-}
