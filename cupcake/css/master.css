@@ -25,6 +25,52 @@ body {
   /*right: 24px;*/
 }
 
+.sprite {
+  position: absolute;
+  z-index: 4;
+  /*background-image: url('../../images/fruits_8bit2.png');*/
+  width: 100px;
+  top: 305px;
+  transform: scale(0.3);
+  right: 558px;
+}
+
+.grape, .strawberry, .cherry, .banana {
+  background-image: url('../../images/fruits_8bit2.png');
+  background-repeat: no-repeat;
+  z-index: 3;
+  /*position: relative;*/
+}
+
+.grape {
+  /*height: 225px;
+  width: 125px;
+  background-position: -247px -3px;*/
+}
+
+.strawberry {
+  /*height: 225px;
+  width: 125px;
+  background-position: -418px 0px;*/
+}
+
+.cherry {
+  /*margin-top: 42px;
+  margin-left: -20px;
+  height: 170px;
+  width: 170px;
+  background-position: -240px -205px;
+  transform: scale(1.3);*/
+}
+
+.banana {
+  margin-top: 48px;
+  height: 170px;
+  width: 125px;
+  background-position: -423px -380px;
+  transform: scale(1.25);
+}
+
 .pixel {
   width: 5px;
   height: 5px;

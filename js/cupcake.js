@@ -30,12 +30,10 @@ for (let i = 0; i < cakeSelectIndex.length; i++) {
   $($('.randCakeBody')[cakeSelectIndex[i]]).css('background-color', cakeColor[randCalc]);
   var randCakeBody = $($('.randCakeBody')[cakeSelectIndex[i]]).css('background-color')
 };
-
 for (let i = 0; i < frostSelectIndex.length; i++) {
   $($('.randFrostTop')[frostSelectIndex[i]]).css('background-color', frostColor[randCalc2]);
   var randFrostTop = $($('.randFrostTop')[frostSelectIndex[i]]).css('background-color');
 };
-
 for (let i = 0; i < sprinkSelectIndex.length; i++) {
   // $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color', sprinkleColor[randCalc3]);
   // var randSprinkTop = $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color');
@@ -113,8 +111,6 @@ $('#sprink4').on('click', function () {
   for (let i = 0; i < sprinkSelectIndex.length; i++) {
     $($('.frostSelect')[sprinkSelectIndex[i]]).css('background-color', sprinkleColor[3][colorCount%3]);
     colorCount ++;
-    // console.log(colorCount);
-    // console.log($($('.frostSelect')[sprinkSelectIndex[0]]).css('background-color'));
   };
 });
 // modifying your cupcake.
@@ -130,3 +126,4 @@ var cakeReset = function() {
     $($('.frostSelect')[sprinkSelectIndex[i]]).css('background-color', '#999999');
   };
 };
+// writing a function to reset if you mess up.
