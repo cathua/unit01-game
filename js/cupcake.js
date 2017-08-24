@@ -47,7 +47,7 @@ for (let i = 0; i < sprinkSelectIndex.length; i++) {
     colorCount ++;
   }
   var randSprinkTop = [$($('.randFrostTop')[sprinkSelectIndex[i-1]]).css('background-color'), $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color')];
-  console.log(randSprinkTop);
+  // console.log(randSprinkTop);
 };
 // randomly generating cupcake.
 

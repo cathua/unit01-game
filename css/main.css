@@ -224,6 +224,7 @@ button {
 .randCup {
   height: 10em;
   align-items: center;
+  transform: scale(0.75);
 }
 
 .randCake{
@@ -331,10 +332,7 @@ button {
 .top02 {
   position: absolute;
   z-index: 100;
-}
-
-.spriteSelect {
-  /*margin-top: 0px;*/
+  /*display: none;*/
 }
 
 .sprite {
@@ -352,11 +350,11 @@ button {
 
 
 .grape {
-  /*margin-top: -110px;
+  margin-top: -110px;
   margin-left: -7px;
   height: 225px;
   width: 125px;
-  background-position: -247px -3px;*/
+  background-position: -247px -3px;
 }
 
 .strawberry {
@@ -377,17 +375,19 @@ button {
 }
 
 .banana {
-  margin-top: -104px;
+  /*margin-top: -104px;
   margin-left: -7px;
   height: 170px;
   width: 125px;
   background-position: -423px -380px;
-  transform: scale(1.25);
+  transform: scale(1.25);*/
 }
 
-
-
-
+.randFruitTop {
+  transform: scale(5);
+  margin-left: 22px;
+  margin-bottom: 80px;
+}
 
 /*toppings*/
 
