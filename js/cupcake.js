@@ -27,6 +27,7 @@ var calcFunction = function () {
 calcFunction();
 
 var spriteSelectClass;
+var chosenSprite;
 
 // necessary variables and arrays.
 
@@ -122,24 +123,63 @@ $('#sprink4').on('click', function () {
   };
 });
 $('#top1').on('click', function () {
-  $($('.spriteSelect')).addClass(toppingType[0]);
-  spriteSelectClass = $('.spriteSelect').attr('class');
-  spriteSelectClass = spriteSelectClass.split(" ").pop();
+  spriteSelectClass = $($('.spriteSelect')).attr('class');
+  chosenSprite = toppingType[0];
+  if (spriteSelectClass == "spriteSelect") {
+    $($('.spriteSelect')).addClass(toppingType[0]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+    }
+  else {
+    $($('.spriteSelect')).attr('class', 'spriteSelect');
+    $($('.spriteSelect')).addClass(toppingType[0]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+    console.log((spriteSelectClass));
+  }
+  console.log(chosenSprite);
 });
 $('#top2').on('click', function () {
-  $($('.spriteSelect')).addClass(toppingType[1]);
-  spriteSelectClass = $('.spriteSelect').attr('class');
-  spriteSelectClass = spriteSelectClass.split(" ").pop();
+  spriteSelectClass = $($('.spriteSelect')).attr('class');
+  chosenSprite = toppingType[1];
+  if (spriteSelectClass == "spriteSelect") {
+    $($('.spriteSelect')).addClass(toppingType[1]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+    }
+  else {
+    $($('.spriteSelect')).attr('class', 'spriteSelect');
+    $($('.spriteSelect')).addClass(toppingType[1]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+    console.log((spriteSelectClass));
+  }
+  console.log(chosenSprite);
 });
 $('#top3').on('click', function () {
-  $($('.spriteSelect')).addClass(toppingType[2]);
-  spriteSelectClass = $('.spriteSelect').attr('class');
-  spriteSelectClass = spriteSelectClass.split(" ").pop();
+  spriteSelectClass = $($('.spriteSelect')).attr('class');
+  console.log(spriteSelectClass);
+  chosenSprite = toppingType[2];
+  if (spriteSelectClass == "spriteSelect") {
+    $($('.spriteSelect')).addClass(toppingType[2]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+    }
+  else {
+    $($('.spriteSelect')).attr('class', 'spriteSelect');
+    $($('.spriteSelect')).addClass(toppingType[2]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+  }
+  console.log(chosenSprite);
 });
 $('#top4').on('click', function () {
-  $($('.spriteSelect')).addClass(toppingType[3]);
-  spriteSelectClass = $('.spriteSelect').attr('class');
-  spriteSelectClass = spriteSelectClass.split(" ").pop();
+  spriteSelectClass = $($('.spriteSelect')).attr('class');
+  chosenSprite = toppingType[3];
+  if (spriteSelectClass == "spriteSelect") {
+    $($('.spriteSelect')).addClass(toppingType[3]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+    }
+  else {
+    $($('.spriteSelect')).attr('class', 'spriteSelect');
+    $($('.spriteSelect')).addClass(toppingType[3]);
+    spriteSelectClass = $($('.spriteSelect')).attr('class');
+  }
+  console.log(chosenSprite);
 });
 
 // modifying your cupcake.
@@ -154,6 +194,17 @@ var cakeReset = function() {
   for (let i = 0; i < sprinkSelectIndex.length; i++) {
     $($('.frostSelect')[sprinkSelectIndex[i]]).css('background-color', '#999999');
   };
-  $($('.spriteSelect')).attr('class', 'selectSprite');
+  console.log(spriteSelectClass);
+  console.log($('.spriteSelect').attr('class'));
+  $('#select-sprite').removeClass();
+  console.log($('#select-sprite').attr('class'));
+  $(`#select-sprite`).attr('class', 'spriteSelect')
+
+  //attr('class', 'selectSprite');
+  // spriteSelectClass = $($('.spriteSelect')).attr('class');
+  // console.log(spriteSelectClass);
+  console.log($('#select-sprite').attr('class'));
+
+  //.attr('class'));
 };
 // writing a function to reset if you mess up.

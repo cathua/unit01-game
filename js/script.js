@@ -32,11 +32,11 @@ $('.submit').on('click', function (e) {
   var selectCakeColor = $($('.cakeSelect')[cakeSelectIndex[0]]).css('background-color');
   var selectFrostColor = $($('.frostSelect')[frostSelectIndex[0]]).css('background-color');
   var selectSprinkColor = [$($('.frostSelect')[sprinkSelectIndex[1]]).css('background-color'), $($('.frostSelect')[sprinkSelectIndex[2]]).css('background-color')];
+  spriteSelectClass = spriteSelectClass.split(" ").pop();
   var selectTopping = spriteSelectClass;
   // spriteSelectClass is defined in cupcake.js.
   // comparison values.
 
-  // console.log(selectTopping, 'select', randTopping, 'rand');
 
   if ((selectCakeColor == randCakeBody) && (selectFrostColor == randFrostTop) && ((selectSprinkColor[0] == randSprinkTop[0]) && (selectSprinkColor[1] == randSprinkTop[1])) && (selectTopping == randTopping)) {
     console.log("yay");
@@ -62,11 +62,14 @@ $('.submit').on('click', function (e) {
       }
       randSprinkTop = [$($('.randFrostTop')[sprinkSelectIndex[i-1]]).css('background-color'), $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color')];
     };
+    $($('.randFruitTop')).attr('id', toppingType[randCalc4]);
+    randTopping = $($('.randFruitTop')).attr('id');
     // create new random cupcake.
 
     cakeReset();
     // reset submitted cupcake.
-  } else {
+    }
+  else {
     console.log("sads");
   }
 });
