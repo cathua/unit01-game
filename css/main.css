@@ -180,7 +180,7 @@ button {
   background: linear-gradient(to right, #f788d7, #f0ed9e, #b4f99f, cyan, #a0daf7, #a3acff); /* Standard syntax (must be last) */
 }
 
-/*begin cupcake formatting*/
+/*begin general cupcake formatting*/
 
 .cupcake {
   height: 9em;
@@ -198,6 +198,7 @@ button {
   width: 95px;
   height: 95px;
   /*position: absolute;*/
+  z-index: 1;
 }
 
 .frosting {
@@ -214,6 +215,8 @@ button {
   float: left;
   /*box-shadow: 0px 0px 1px #fff;*/
 }
+
+/* begin randomly generated cupcake formatting */
 
 .randCup {
   height: 10em;
@@ -242,14 +245,12 @@ button {
   height: 25px;
 }
 
+/* end randomly generated cupcake formatting */
+
 .cake:nth-child(178), .cake:nth-child(184),
-
 .cake:nth-child(196), .cake:nth-child(197),
-
 .cake:nth-child(198), .cake:nth-child(202), .cake:nth-child(203), .cake:nth-child(204),
-
 .cake:nth-child(214), .cake:nth-child(215), .cake:nth-child(216), .cake:nth-child(217), .cake:nth-child(218), .cake:nth-child(219), .cake:nth-child(220), .cake:nth-child(221), .cake:nth-child(222), .cake:nth-child(223), .cake:nth-child(224), .cake:nth-child(225), .cake:nth-child(233), .cake:nth-child(234), .cake:nth-child(235), .cake:nth-child(236), .cake:nth-child(237), .cake:nth-child(238), .cake:nth-child(239), .cake:nth-child(240), .cake:nth-child(241), .cake:nth-child(242), .cake:nth-child(243), .cake:nth-child(252), .cake:nth-child(253), .cake:nth-child(254), .cake:nth-child(255), .cake:nth-child(256), .cake:nth-child(239), .cake:nth-child(240), .cake:nth-child(241), .cake:nth-child(242), .cake:nth-child(257), .cake:nth-child(258), .cake:nth-child(259), .cake:nth-child(260), .cake:nth-child(261), .cake:nth-child(262),
-
 .cake:nth-child(272), .cake:nth-child(273), .cake:nth-child(274), .cake:nth-child(275), .cake:nth-child(276), .cake:nth-child(277), .cake:nth-child(278), .cake:nth-child(279), .cake:nth-child(280)
 
  {
@@ -323,4 +324,64 @@ button {
 
 /*sprinkles*/
 
-/*end cupcake formatting*/
+
+.top02 {
+  position: absolute;
+  z-index: 100;
+}
+
+.spriteSelect {
+  /*margin-top: 0px;*/
+}
+
+.sprite {
+  z-index: 9000;
+  width: 100px;
+  top: 305px;
+  transform: scale(0.3);
+}
+
+.grape, .strawberry, .cherry, .banana {
+  background-image: url('../images/fruits_8bit2.png');
+  background-repeat: no-repeat;
+  z-index: 9001;
+}
+
+.grape {
+  /*margin-top: -100px;
+  margin-left: -7px;
+  height: 225px;
+  width: 125px;
+  background-position: -247px -3px;*/
+}
+
+.strawberry {
+  /*height: 225px;
+  width: 125px;
+  background-position: -418px 0px;*/
+}
+
+.cherry {
+  /*margin-top: 42px;
+  margin-left: -20px;
+  height: 170px;
+  width: 170px;
+  background-position: -240px -205px;
+  transform: scale(1.3);*/
+}
+
+.banana {
+  /*margin-top: 48px;
+  height: 170px;
+  width: 125px;
+  background-position: -423px -380px;
+  transform: scale(1.25);*/
+}
+
+
+
+
+
+/*toppings*/
+
+/*end general cupcake formatting*/
