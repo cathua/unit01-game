@@ -2,7 +2,8 @@ console.log("cupcake customization loaded");
 
 cakeColor = ['#ffc9f0', '#f0ed9e', '#563403', '#aee0ef'];
 frostColor = ['#ffffff', '#563403', '#a3acff', '#b4f99f'];
-sprinkleColor = ['#ffcb77', '#ffc9f0', '#aee0ef', ['#ffcb77', '#ffc9f0', '#aee0ef']]
+sprinkleColor = ['#ffcb77', '#ffc9f0', '#aee0ef', ['#ffcb77', '#ffc9f0', '#aee0ef']];
+toppingType = ['grape', 'strawberry', 'cherry', 'banana'];
 
 cakeSelectIndex = [177, 183, 195, 196, 197, 201, 202, 203, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 271, 272, 273, 274, 275, 276, 277, 278, 279];
 
@@ -14,14 +15,18 @@ var colorCount = 0;
 // this is useful later when making rainbow sprinkles.
 
 var randCalc;
-var randCalc2
-var randCalc3
+var randCalc2;
+var randCalc3;
+var randCalc4;
 var calcFunction = function () {
   randCalc = Math.floor(Math.random() * 4);
   randCalc2 = Math.floor(Math.random() * 4);
   randCalc3 = Math.floor(Math.random() * 4);
+  randCalc4 = Math.floor(Math.random() *4);
 }
 calcFunction();
+
+var spriteSelectClass;
 
 // necessary variables and arrays.
 
@@ -47,8 +52,11 @@ for (let i = 0; i < sprinkSelectIndex.length; i++) {
     colorCount ++;
   }
   var randSprinkTop = [$($('.randFrostTop')[sprinkSelectIndex[i-1]]).css('background-color'), $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color')];
-  // console.log(randSprinkTop);
 };
+// note that the for loops for our randomly generated cupcake only work for modifications that interact with the indexes.
+$($('.randFruitTop')).attr('id', toppingType[randCalc4]);
+var randTopping = $($('.randFruitTop')).attr('id');
+// add a random id. adding the random id makes the topping appear.
 // randomly generating cupcake.
 
 $('#color1').on('click', function() {
@@ -113,6 +121,27 @@ $('#sprink4').on('click', function () {
     colorCount ++;
   };
 });
+$('#top1').on('click', function () {
+  $($('.spriteSelect')).addClass(toppingType[0]);
+  spriteSelectClass = $('.spriteSelect').attr('class');
+  spriteSelectClass = spriteSelectClass.split(" ").pop();
+});
+$('#top2').on('click', function () {
+  $($('.spriteSelect')).addClass(toppingType[1]);
+  spriteSelectClass = $('.spriteSelect').attr('class');
+  spriteSelectClass = spriteSelectClass.split(" ").pop();
+});
+$('#top3').on('click', function () {
+  $($('.spriteSelect')).addClass(toppingType[2]);
+  spriteSelectClass = $('.spriteSelect').attr('class');
+  spriteSelectClass = spriteSelectClass.split(" ").pop();
+});
+$('#top4').on('click', function () {
+  $($('.spriteSelect')).addClass(toppingType[3]);
+  spriteSelectClass = $('.spriteSelect').attr('class');
+  spriteSelectClass = spriteSelectClass.split(" ").pop();
+});
+
 // modifying your cupcake.
 
 var cakeReset = function() {
@@ -125,5 +154,6 @@ var cakeReset = function() {
   for (let i = 0; i < sprinkSelectIndex.length; i++) {
     $($('.frostSelect')[sprinkSelectIndex[i]]).css('background-color', '#999999');
   };
+  $($('.spriteSelect')).attr('class', 'selectSprite');
 };
 // writing a function to reset if you mess up.

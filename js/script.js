@@ -6,11 +6,12 @@ $('#playPause').on('click', function () {
   if (button == "► PLAY") {
     runningWatchUp = setInterval(timerUp, 1000);
     button = $('#playPause').text('❙❙ PAUSE');
-} else {
-  clearInterval(runningWatchUp);
-  clearInterval(runningWatchDown);
-  button = $('#playPause').text('► PLAY');
-}
+    }
+  else {
+    clearInterval(runningWatchUp);
+    clearInterval(runningWatchDown);
+    button = $('#playPause').text('► PLAY');
+    }
 });
 
 $('#reset').on('click', function () {
@@ -31,12 +32,18 @@ $('.submit').on('click', function (e) {
   var selectCakeColor = $($('.cakeSelect')[cakeSelectIndex[0]]).css('background-color');
   var selectFrostColor = $($('.frostSelect')[frostSelectIndex[0]]).css('background-color');
   var selectSprinkColor = [$($('.frostSelect')[sprinkSelectIndex[1]]).css('background-color'), $($('.frostSelect')[sprinkSelectIndex[2]]).css('background-color')];
-  console.log(selectSprinkColor, 'select', randSprinkTop, 'rand');
-  if ((selectCakeColor == randCakeBody) && (selectFrostColor == randFrostTop) && ((selectSprinkColor[0] == randSprinkTop[0]) && (selectSprinkColor[1] == randSprinkTop[1]))) {
+  var selectTopping = spriteSelectClass;
+  // spriteSelectClass is defined in cupcake.js.
+  // comparison values.
+
+  // console.log(selectTopping, 'select', randTopping, 'rand');
+
+  if ((selectCakeColor == randCakeBody) && (selectFrostColor == randFrostTop) && ((selectSprinkColor[0] == randSprinkTop[0]) && (selectSprinkColor[1] == randSprinkTop[1])) && (selectTopping == randTopping)) {
     console.log("yay");
     calcFunction();
     scoreUp();
-    // console.log(randCalc, 'rC')
+    // increase score, prepare for cupcake reset.
+
     for (let i = 0; i < cakeSelectIndex.length; i++) {
       $($('.randCakeBody')[cakeSelectIndex[i]]).css('background-color', cakeColor[randCalc]);
       randCakeBody = $($('.randCakeBody')[cakeSelectIndex[i]]).css('background-color')
@@ -55,7 +62,10 @@ $('.submit').on('click', function (e) {
       }
       randSprinkTop = [$($('.randFrostTop')[sprinkSelectIndex[i-1]]).css('background-color'), $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color')];
     };
+    // create new random cupcake.
+
     cakeReset();
+    // reset submitted cupcake.
   } else {
     console.log("sads");
   }
