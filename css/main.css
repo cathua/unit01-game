@@ -350,6 +350,7 @@ button {
   z-index: 9001;
 }
 
+
 .grape {
   /*margin-top: -110px;
   margin-left: -7px;
@@ -376,11 +377,12 @@ button {
 }
 
 .banana {
-  /*margin-top: 48px;
+  margin-top: -104px;
+  margin-left: -7px;
   height: 170px;
   width: 125px;
   background-position: -423px -380px;
-  transform: scale(1.25);*/
+  transform: scale(1.25);
 }
 
 
