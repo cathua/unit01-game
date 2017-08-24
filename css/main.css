@@ -44,6 +44,8 @@ h2 {
   text-shadow: 2px 2px #f9b48e;
 }
 
+/*timer formatting*/
+
 .timer {
   /*margin-top: 0px;*/
   padding: .5em;
@@ -57,6 +59,8 @@ h2 {
 .timer h1 {
   margin: .5em;
 }
+
+/*timer button formatting*/
 
 .playPause {
   display: inline-block;
@@ -80,6 +84,8 @@ button {
   background-color: inherit;
   font-family: 'codeman38_press-start-2p', monospace;
 }
+
+/*cupcake station formatting*/
 
 .shop {
   height: calc(100% - 83px - 30%);
@@ -113,9 +119,10 @@ button {
   text-align: center;
   display: flex;
   flex-direction: row;
+  background-color: #ff5254;
 }
 
-#color1, #color2, #color3, #color4, #frost1, #frost2, #frost3, #frost4 {
+#color1, #color2, #color3, #color4, #frost1, #frost2, #frost3, #frost4, #sprink1, #sprink2, #sprink3, #sprink4 {
   width: 2em;
   height: 2em;
   margin: 10px;
@@ -151,6 +158,22 @@ button {
 
 #frost4{
   background-color: #b4f99f;
+}
+
+#sprink1 {
+  background-color: #ffc270;
+}
+
+#sprink2 {
+  background-color: #ffc9f0;
+}
+
+#sprink3 {
+  background-color: #fff;
+}
+
+#sprink4 {
+  background-color: #fff;
 }
 
 /*begin cupcake formatting*/
@@ -289,5 +312,11 @@ button {
 }
 
 /*frosting filling*/
+
+.frosting:nth-child(50), .frosting:nth-child(65), .frosting:nth-child(87), .frosting:nth-child(102), .frosting:nth-child(109), .frosting:nth-child(123), .frosting:nth-child(137), .frosting:nth-child(149), .frosting:nth-child(162) {
+  background-color: #999999;
+}
+
+/*sprinkles*/
 
 /*end cupcake formatting*/

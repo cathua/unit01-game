@@ -22,6 +22,7 @@ body {
   position: relative;
   z-index: 2;
   bottom: 10px;
+  /*right: 24px;*/
 }
 
 .pixel {
@@ -130,3 +131,9 @@ body {
 }
 
 /*frosting filling*/
+
+.frosting:nth-child(50), .frosting:nth-child(65), .frosting:nth-child(87), .frosting:nth-child(102), .frosting:nth-child(109), .frosting:nth-child(123), .frosting:nth-child(137), .frosting:nth-child(149), .frosting:nth-child(162) {
+  background-color: #134290;
+}
+
+/*sprinkles*/

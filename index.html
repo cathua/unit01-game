@@ -21,11 +21,13 @@
         <div class="timer">
           <h4 id="timer">00:00</h4>
         </div>
+
         <div class="playPause">
           <button id="playPause">&#9658; PLAY</button>
           <button id="reset">   RESET</button>
         </div>
       </div>
+
       <div class="random col-md-12 col-sm-12 col-xs-12">
         <div class="cupcake randCup">
           <div class="top02 randTop02"></div>
@@ -555,20 +557,15 @@
         </div>
       </div>
 
+      <div class ="random col-md-12 col-sm-12 col-xs-12">
+          <div class="score">
+            <h4 id="score">SCORE</h4>
+            <h4 id="scoreVal">00</h4>
+          </div>
+      </div>
     </div>
     <div class="station row">
       <div class="left col-md-3 col-sm-3 col-xs-3">
-        <div class="box innerBox">
-          <div class="cakeColor">
-            <h5>Cake</h5>
-            <div class="colorSelect">
-              <div id="color1"></div>
-              <div id="color2"></div>
-              <div id="color3"></div>
-              <div id="color4"></div>
-            </div>
-          </div>
-        </div>
         <div class="box innerBox">
           <div class="frostColor">
             <h5>Frosting</h5>
@@ -577,6 +574,17 @@
               <div id="frost2"></div>
               <div id="frost3"></div>
               <div id="frost4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="box innerBox">
+          <div class="cakeColor">
+            <h5>Cake</h5>
+            <div class="colorSelect">
+              <div id="color1"></div>
+              <div id="color2"></div>
+              <div id="color3"></div>
+              <div id="color4"></div>
             </div>
           </div>
         </div>
@@ -1120,6 +1128,12 @@
         <div class="box innerBox">
           <div class="sprinkles">
             <h5>Sprinkles</h5>
+            <div class="colorSelect">
+              <div id="sprink1"></div>
+              <div id="sprink2"></div>
+              <div id="sprink3"></div>
+              <div id="sprink4"></div>
+            </div>
           </div>
         </div>
         <div class="box">
@@ -1137,6 +1151,7 @@
   crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/timer.js"></script>
     <script type="text/javascript" src="js/cupcake.js"></script>
+    <script type="text/javascript" src="js/score.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
