@@ -30,9 +30,9 @@ $('.submit').on('click', function (e) {
   e.preventDefault();
   var selectCakeColor = $($('.cakeSelect')[cakeSelectIndex[0]]).css('background-color');
   var selectFrostColor = $($('.frostSelect')[frostSelectIndex[0]]).css('background-color');
-  var selectSprinkColor = $($('.frostSelect')[sprinkSelectIndex[0]]).css('background-color');
-  // console.log(selectCakeColor, randCakeBody, selectFrostColor, randFrostTop, 'sdfja;kfkjdafkadsfjadkls;')
-  if ((selectCakeColor == randCakeBody) && (selectFrostColor == randFrostTop) && (selectSprinkColor == randSprinkTop)) {
+  var selectSprinkColor = [$($('.frostSelect')[sprinkSelectIndex[1]]).css('background-color'), $($('.frostSelect')[sprinkSelectIndex[2]]).css('background-color')];
+  console.log(selectSprinkColor, 'select', randSprinkTop, 'rand');
+  if ((selectCakeColor == randCakeBody) && (selectFrostColor == randFrostTop) && ((selectSprinkColor[0] == randSprinkTop[0]) && (selectSprinkColor[1] == randSprinkTop[1]))) {
     console.log("yay");
     calcFunction();
     scoreUp();
@@ -42,12 +42,18 @@ $('.submit').on('click', function (e) {
       randCakeBody = $($('.randCakeBody')[cakeSelectIndex[i]]).css('background-color')
     };
     for (let i = 0; i < frostSelectIndex.length; i++) {
-      $($('.randFrostTop')[frostSelectIndex[i]]).css('background-color', frostColor[randCalc]);
+      $($('.randFrostTop')[frostSelectIndex[i]]).css('background-color', frostColor[randCalc2]);
       randFrostTop = $($('.randFrostTop')[frostSelectIndex[i]]).css('background-color');
     };
     for (let i = 0; i < sprinkSelectIndex.length; i++) {
-      $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color', sprinkleColor[randCalc]);
-      randSprinkTop = $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color');
+      if (randCalc3 == 0 || randCalc3 == 1 || randCalc3 == 2) {
+        $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color', sprinkleColor[randCalc3]);
+      }
+      else {
+        $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color', sprinkleColor[3][colorCount%3]);
+        colorCount ++;
+      }
+      randSprinkTop = [$($('.randFrostTop')[sprinkSelectIndex[i-1]]).css('background-color'), $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color')];
     };
     cakeReset();
   } else {

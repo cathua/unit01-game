@@ -41,7 +41,7 @@ header {
 }
 
 h2 {
-  text-shadow: 2px 2px #f9b48e;
+  text-shadow: 2px 2px #edc965;
 }
 
 /*timer formatting*/
@@ -119,7 +119,7 @@ button {
   text-align: center;
   display: flex;
   flex-direction: row;
-  background-color: #ff5254;
+  background-color: #ff6b6d;
 }
 
 #color1, #color2, #color3, #color4, #frost1, #frost2, #frost3, #frost4, #sprink1, #sprink2, #sprink3, #sprink4 {
@@ -141,7 +141,7 @@ button {
 }
 
 #color4 {
-  background-color: #a0daf7;
+  background-color: #aee0ef;
 }
 
 #frost1 {
@@ -153,7 +153,7 @@ button {
 }
 
 #frost3 {
-  background-color: #c9ceff;
+  background-color: #a3acff;
 }
 
 #frost4{
@@ -169,11 +169,15 @@ button {
 }
 
 #sprink3 {
-  background-color: #fff;
+  background-color: #aee0ef;
 }
 
 #sprink4 {
-  background-color: #fff;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #f788d7, #f0ed9e, #b4f99f, cyan, #a0daf7, #a3acff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #f788d7, #f0ed9e, #b4f99f, cyan, #a0daf7, #a3acff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #f788d7, #f0ed9e, #b4f99f, cyan, #a0daf7, #a3acff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #f788d7, #f0ed9e, #b4f99f, cyan, #a0daf7, #a3acff); /* Standard syntax (must be last) */
 }
 
 /*begin cupcake formatting*/
@@ -313,7 +317,7 @@ button {
 
 /*frosting filling*/
 
-.frosting:nth-child(50), .frosting:nth-child(65), .frosting:nth-child(87), .frosting:nth-child(102), .frosting:nth-child(109), .frosting:nth-child(123), .frosting:nth-child(137), .frosting:nth-child(149), .frosting:nth-child(162) {
+.frosting:nth-child(50), .frosting:nth-child(65), .frosting:nth-child(87), .frosting:nth-child(102), .frosting:nth-child(109), .frosting:nth-child(123), .frosting:nth-child(137), .frosting:nth-child(162), .frosting:nth-child(169) {
   background-color: #999999;
 }
 
