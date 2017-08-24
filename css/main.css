@@ -44,6 +44,10 @@ h2 {
   text-shadow: 2px 2px #edc965;
 }
 
+.workspaceTitle {
+  padding-bottom: 20px;
+}
+
 /*timer formatting*/
 
 .timer {
@@ -187,7 +191,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*padding: 1em;*/
 }
 
 .body {
@@ -364,8 +367,8 @@ button {
 }
 
 .cherry {
-  /*margin-top: 42px;
-  margin-left: -20px;
+  /*margin-top: -112px;
+  margin-left: -21px;
   height: 170px;
   width: 170px;
   background-position: -240px -205px;
