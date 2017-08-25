@@ -1,12 +1,12 @@
 /* Font setup. */
 @font-face {
   font-family: '8-BIT WONDER';
-  src: url('../fonts/8bit_wonder/8-BIT-WONDER.ttf') format('truetype');
-     }
+  src: url('../fonts/8bit_wonder/8-BIT-WONDER.TTF') format('truetype');
+}
 
 @font-face {
   font-family: 'codeman38_press-start-2p';
-  src: url('../fonts/codeman38_press-start-2p/PressStart2p.ttf') format('truetype');
+  src: url('../fonts/codeman38_press-start-2p/PressStart2p.TTF') format('truetype');
 }
 
 @font-face {
