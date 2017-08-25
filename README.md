@@ -33,13 +33,16 @@ Currently, the timer in the upper left corner counts up instead of down. The use
 
 ## Overall Impressions
 This game was challenging in ways that I had hoped to challenge myself. I also encountered issues that I had not encountered before. Overall, the big win from this project was creating something that looked like a "real", presentable product. Creating the pixel cupcake (entirely out of divs in HTML!) was a challenge that I was proud to overcome, and I was also happy that I became more comfortable with bootstrap, jQuery, and writing complex functions.  
-  
+
 I definitely felt as though, however, I struggled to write DRY code. Give the time constraints, I was motivated to create workable solutions rather than elegant ones, and I hope to go back and be able to clean up my project and increase efficiency in addition to adding more robust features.
 
 ## Additional Credits and Shoutouts
 Thank you to the CODA program for giving me the opportunity to learn how to code.  
+
 A huge thank-you to the General Assembly instructors and assistants for being fantastic teachers and mentors throughout this process.  
+
 A major thank-you to my friends and family who were willing to celebrate my successes with me, and be a resource when I struggled.  
+  
 And lastly... a huge thank-you to W3Schools, the Mozilla Developer Network, Stack Overflow, and Google. Thank you for being there late at night, early in the morning, and always willing to listen to my questions. I couldn't have done this without you.  
 
 Enjoy the game!  
