@@ -1,6 +1,9 @@
 # unit01-game
 A DIY cupcake matching game!
 
+### Relevant Links
+[Deployed Page](https://cathua.github.io/unit01-game/)
+[Trello Board (includes features & user stories)](https://trello.com/b/kwaPrg9j/bakeshoppe)
 
 
 Instructions: Make a cupcake that matches the customer's orders. Do as many orders as you can before time runs out!
