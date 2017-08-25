@@ -1,17 +1,17 @@
 /* Font setup. */
 @font-face {
   font-family: '8-BIT WONDER';
-  src: url('../fonts/8bit_wonder/8-BIT WONDER.ttf') format('truetype');
+  src: url('file://fonts/8bit_wonder/8-BIT-WONDER.ttf') format('truetype');
      }
 
 @font-face {
   font-family: 'codeman38_press-start-2p';
-  src: url('../fonts/codeman38_press-start-2p/PressStart2p.ttf') format('truetype');
+  src: url('file://fonts/codeman38_press-start-2p/PressStart2p.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'FreePixel';
-  src: url('../fonts/FreePixel.ttf') format('truetype');
+  src: url('file://fonts/FreePixel.ttf') format('truetype');
 }
 
 html {
