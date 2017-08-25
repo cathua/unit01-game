@@ -55,6 +55,7 @@ for (let i = 0; i < sprinkSelectIndex.length; i++) {
   var randSprinkTop = [$($('.randFrostTop')[sprinkSelectIndex[i-1]]).css('background-color'), $($('.randFrostTop')[sprinkSelectIndex[i]]).css('background-color')];
 };
 // note that the for loops for our randomly generated cupcake only work for modifications that interact with the indexes.
+
 $($('.randFruitTop')).attr('id', toppingType[randCalc4]);
 var randTopping = $($('.randFruitTop')).attr('id');
 // add a random id. adding the random id makes the topping appear.
@@ -194,10 +195,10 @@ var cakeReset = function() {
   for (let i = 0; i < sprinkSelectIndex.length; i++) {
     $($('.frostSelect')[sprinkSelectIndex[i]]).css('background-color', '#999999');
   };
-  console.log(spriteSelectClass);
+  // console.log(spriteSelectClass);
   console.log($('.spriteSelect').attr('class'));
   $('#select-sprite').removeClass();
-  console.log($('#select-sprite').attr('class'));
+  // console.log($('#select-sprite').attr('class'));
   $(`#select-sprite`).attr('class', 'spriteSelect')
 
   //attr('class', 'selectSprite');

@@ -45,7 +45,7 @@ h2 {
 }
 
 .workspaceTitle {
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 }
 
 /*columm sizing formatting*/
@@ -95,6 +95,11 @@ button {
   font-family: 'codeman38_press-start-2p', monospace;
 }
 
+.buttons {
+  margin: 4.5% 2.5% 2.5% 2.5%;
+  padding: 20px;
+}
+
 /*score formatting*/
 
 .score {
@@ -102,6 +107,11 @@ button {
   position: absolute;
   bottom: 0;
   right: 20px;
+  padding-right: 10px;
+}
+
+#scoreVal {
+  text-align: center;
 }
 
 /*cupcake station formatting*/
@@ -263,6 +273,14 @@ img {
   align-items: center;
 }
 
+.mini {
+  height: 20%;
+  padding: 5% 5% 0 5%;
+  transform: scale(1.2);
+  width: 50%;
+  margin: 0 auto;
+}
+
 .body {
   position: absolute;
 }
@@ -295,6 +313,7 @@ img {
   height: 10em;
   align-items: center;
   transform: scale(0.75);
+  margin-top: 10%;
 }
 
 .randCake{

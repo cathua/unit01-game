@@ -2,11 +2,10 @@
 console.log("timer loaded");
 
 var minutes = 0;
-var seconds = 0;
+var seconds = 30;
 var time = $('#timer').text();
 var button = $('#playPause').text();
-// console.log(time);
-// console.log(button);
+// setting relevant variables
 
 var timerUp = function () {
   // console.log("hello");
@@ -52,27 +51,28 @@ var timerUp = function () {
     $('#timer').text(time);
   }
 };
+// timer goes up by one second intervals. this isn't super dry though :(
+
 
 var timerDown = function () {
   // console.log("hello");
+  console.log(seconds, "at start of timerDown");
   seconds -= 1;
-  // console.log(seconds);
   let sec = seconds % 60;
   let min = (seconds - sec)/60;
-  // console.log(min);
   if (seconds < 0) {
     var zero = "00:00"
     $('#timer').text(zero);
+    button = $('#playPause').text('► PLAY');
+    // included this to change the play button.
+    // console.log(seconds, "in if statement");
   }
   else if (min == 0) {
-    // console.log("minute 0");
     if (sec < 10) {
       time = "00:0" + sec;
-      // console.log(time);
     }
     else if (10 <= sec && sec < 60) {
       time = "00:" + seconds;
-      // console.log(time);
     }
     console.log(time);
     $('#timer').text(time);
@@ -91,43 +91,22 @@ var timerDown = function () {
   else if (min > 10) {
     if (sec < 10) {
       time = min + ":0" + sec;
-      // console.log(time);
     }
     else if (10 <= sec && sec < 60) {
       time = min + ":" + seconds;
-      // console.log(time);
     }
     console.log(time);
     $('#timer').text(time);
+  }
+};
+// timer goes down by one second intervals. stops at 0. play button resets at 0.
+
+var disableCupcakeButtons = function () {
+  if ($('#playPause').text() == '❙❙ PAUSE') {
+    console.log("sup");
   }
 };
 
 
 var runningWatchUp;
 var runningWatchDown;
-
-// $('#playPause').on('click', function () {
-//   // console.log(button);
-//   if (button == "► PLAY") {
-//     // console.log("hey");
-//     runningWatchUp = setInterval(timerUp, 1000);
-//     button = $('#playPause').text('❙❙ PAUSE');
-//     // console.log(button);
-// } else {
-//   clearInterval(runningWatchUp);
-//   clearInterval(runningWatchDown);
-//   button = $('#playPause').text('► PLAY');
-// }
-// // console.log("hey");
-// });
-// // $('#pause').on('click', function () {
-// //   clearInterval(runningWatchUp);
-// //   clearInterval(runningWatchDown);
-// // });
-// $('#reset').on('click', function () {
-//   time = "00:00";
-//   $('#timer').text(time);
-// })
-// // $('#countdown').on('click', function() {
-// //   runningWatchDown = setInterval(timerDown, 1000);
-// // })

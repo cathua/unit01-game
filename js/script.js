@@ -3,6 +3,25 @@ console.log("main script loaded");
 // begin timer functions
 
 $('#playPause').on('click', function () {
+  console.log("before if/switch statement");
+  console.log(button);
+
+  // switch (button == '► PLAY') {
+  //   case true:
+  //     console.log(seconds, "time before resume/play");
+  //     runningWatchDown = setInterval(timerDown, 1000);
+  //     button = $('#playPause').text('❙❙ PAUSE');
+  //     break;
+  //   case false:
+  //     clearInterval(runningWatchDown);
+  //     console.log(seconds, "time at pause");
+  //     console.log(button);
+  //     button = $('#playPause').text('► PLAY');
+  //     console.log(button);
+  //     break;
+  // };
+  // attempted to fix problem with switch statement. it changes nothing. (lol)
+
   if (button == "► PLAY") {
     runningWatchUp = setInterval(timerUp, 1000);
     button = $('#playPause').text('❙❙ PAUSE');
@@ -12,11 +31,29 @@ $('#playPause').on('click', function () {
     clearInterval(runningWatchDown);
     button = $('#playPause').text('► PLAY');
     }
+  // working from previous commit
+
+  // if (button == '► PLAY') {
+  //   console.log(seconds, "time before resume/play");
+  //   runningWatchDown = setInterval(timerDown, 1000);
+  //   button = $('#playPause').text('❙❙ PAUSE');
+  //   console.log(button);
+  //   // disableCupcakeButtons();
+  //   }
+  // else {
+  //   clearInterval(runningWatchDown);
+  //   console.log(seconds, "time at pause");
+  //   button = $('#playPause').text('► PLAY');
+  //   }
+  // messed up code
 });
+// this function also disables all the cupcake buttons so you can't work the game while you're paused.
+
 
 $('#reset').on('click', function () {
-  time = "00:00";
+  time = "00:30";
   $('#timer').text(time);
+  seconds = 30;
 });
 
 // $('#countdown').on('click', function() {
@@ -36,7 +73,6 @@ $('.submit').on('click', function (e) {
   var selectTopping = spriteSelectClass;
   // spriteSelectClass is defined in cupcake.js.
   // comparison values.
-
 
   if ((selectCakeColor == randCakeBody) && (selectFrostColor == randFrostTop) && ((selectSprinkColor[0] == randSprinkTop[0]) && (selectSprinkColor[1] == randSprinkTop[1])) && (selectTopping == randTopping)) {
     console.log("yay");
