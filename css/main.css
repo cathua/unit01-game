@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'codeman38_press-start-2p';
-  src: url('../fonts/codeman38_press-start-2p/PressStart2p.TTF') format('truetype');
+  src: url("../fonts/codeman38_press-start-2p/PressStart2p.TTF") format('truetype');
 }
 
 @font-face {
