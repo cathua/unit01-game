@@ -171,7 +171,7 @@ button {
 
 /* end fruit class info */
 
-#color1, #color2, #color3, #color4, #frost1, #frost2, #frost3, #frost4, #sprink1, #sprink2, #sprink3, #sprink4 {
+#color1, #color2, #color3, #color4, #frost1, #frost2, #frost3, #frost4, #sprink1, #sprink2, #sprink3, #sprink4, #top1, #top2, #top3, #top4 {
   width: 2em;
   height: 2em;
   margin: 10px;
@@ -229,48 +229,8 @@ button {
   background: linear-gradient(to right, #f788d7, #f0ed9e, #b4f99f, cyan, #a0daf7, #a3acff); /* Standard syntax (must be last) */
 }
 
-#top1, #top2, #top3, #top4 {
-  margin-left: -100px;
-  margin-right: -100px;
-  display: flex;
-  flex-direction: row;
-  bottom: -15px;
-  left: 80px;
-}
-
-#top1 {
-  transform: scale(.3);
-  width: 160px;
-  height: 125px;
-  background-position: -248px -75px;
-  position: absolute;
-  left: 84px;
-  margin-right: 30px;
-}
-
-#top2 {
-  transform: scale(.3);
-  width: 130px;
-  height: 125px;
-  background-position-y: -75px;
-  margin-left: -37px;
-  /*position: relative;*/
-  position: absolute;
-}
-
-#top3 {
-  transform: scale(.3);
-  width: 130px;
-  position: absolute;
-  margin-left: 10px;
-  bottom: -35px;
-
-}
-
-#top4 {
-  transform: scale(.3);
-  width: 150px;
-  margin-left: 105px;
+img {
+  height: 100%;
 }
 
 /*begin general cupcake formatting*/
