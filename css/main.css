@@ -20,7 +20,7 @@ html {
   /*font-family: 'codeman38_press-start-2p', monospace;*/
 }
 
-/* Scaffolding formatting */
+/*text formatting */
 
 body {
   font-family: 'codeman38_press-start-2p', monospace;
@@ -46,6 +46,12 @@ h2 {
 
 .workspaceTitle {
   padding-bottom: 20px;
+}
+
+/*columm sizing formatting*/
+.shopLeft, .shopCenter, .shopRight {
+  /*width: 100%;*/
+  height: 100%;
 }
 
 /*timer formatting*/
@@ -89,7 +95,20 @@ button {
   font-family: 'codeman38_press-start-2p', monospace;
 }
 
+/*score formatting*/
+
+.score {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
 /*cupcake station formatting*/
+
+.cakeContainer {
+  height: 100%;
+}
 
 .shop {
   height: calc(100% - 83px - 30%);
@@ -123,6 +142,7 @@ button {
   text-align: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   background-color: #ff6b6d;
 }
 
@@ -319,9 +339,7 @@ img {
 .cake:nth-child(271),.cake:nth-child(281),
 /*16th row*/
 
-.cake:nth-child(291), .cake:nth-child(292), .cake:nth-child(293), .cake:nth-child(294), .cake:nth-child(295), .cake:nth-child(296), .cake:nth-child(297), .cake:nth-child(298), .cake:nth-child(299)
-/*16th row*/
-{
+.cake:nth-child(291), .cake:nth-child(292), .cake:nth-child(293), .cake:nth-child(294), .cake:nth-child(295), .cake:nth-child(296), .cake:nth-child(297), .cake:nth-child(298), .cake:nth-child(299) /*16th row*/ {
   background-color: #000;
 }
 
